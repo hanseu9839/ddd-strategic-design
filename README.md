@@ -168,7 +168,7 @@ docker compose -p kitchenpos up -d
 - `Product`는 `name`과 `price`를 가지고 있다.
 
 행위
-- `Product`를 `Product 등록 정책`에 따라 등록할 수 있다. 
+- `Product`를 `Product 등록 정책`에 따라 등록할 수 있다.
   - `name`과 `price`를 입력하여 등록 가능하다.
   - `Product 등록 정책`
     - `name`과 `price`은 반드시 입력되어야 한다.
@@ -211,7 +211,7 @@ docker compose -p kitchenpos up -d
     - `Menu`의 `price`는 해당 `Menu`에 속한 `Product`들의 총 가격을 초과할 수 없다.
 - `Menu`의 `price`은 `Menu 가격 정책`에 따라 변경할 수 있다.
   - `Menu 가격 정책`
-    - `price`은 반드시 입력되어야 한다. 
+    - `price`은 반드시 입력되어야 한다.
     - `price`은 0원 이상 이어야한다.
     - `Menu`의 `price`는 해당 `Menu`에 속한 `Product`들의 총 가격을 초과할 수 없다.
 - `Menu 노출 정책`에 따라 `Menu`의 `displayed`를 변경할 수 있다.
@@ -260,7 +260,7 @@ docker compose -p kitchenpos up -d
 
 - ① `deliveryOrder`는 `DeliveryOrder 등록 정책`에 따라 등록할 수 있다.
   - `DeliveryOrder 등록 정책`
-    - `orderType`이 `DELIVERY`인 경우만 등록 가능하다. 
+    - `orderType`이 `DELIVERY`인 경우만 등록 가능하다.
     - 반드시 1개 이상의 `OrderLineItem`이 있어야 한다.
     - `Not Display Menu`는 등록할 수 없다.
     - `OrderLineItem`의 `price`는 `Menu`의 `price`와 동일해야 한다.
